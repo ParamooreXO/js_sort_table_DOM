@@ -1,0 +1,2 @@
+var e=document.querySelector("table");e.tHead.addEventListener("click",function(t){var r=t.target.closest("th").cellIndex,a=Array.from(e.tBodies[0].rows),l=document.createElement("tbody");a.sort(function(e,t){var a=e.cells[r].textContent.replaceAll(/[^0-9a-zA-Z]/g,""),l=t.cells[r].textContent.replaceAll(/[^0-9a-zA-Z]/g,"");return isNaN(a)||isNaN(l)?isNaN(a)?String(a).localeCompare(String(l)):void 0:Number(a)-Number(l)}),a.forEach(function(e){l.appendChild(e)}),e.tBodies[0].replaceWith(l)});
+//# sourceMappingURL=index.fbcc2999.js.map
